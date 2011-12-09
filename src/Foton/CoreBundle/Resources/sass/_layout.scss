@@ -1,0 +1,119 @@
+@import "base";
+
+$ninesixty_columns: 16;
+
+$body-background-color: #fff;
+$body-background-gradient: linear-gradient(#f3f3f3, #fff 200px);
+
+$menu-background-color: #fbfbfb;
+$ui-gradient-start: lighten($menu-background-color, 5%);
+$ui-gradient-stop: darken($menu-background-color, 5%);
+$menu-background-gradient: linear-gradient(lighten($menu-background-color, 5%), darken($menu-background-color, 5%));
+
+$foton-ui-border-color: #efefef;
+$foton-ui-border-radius: 5px;
+$foton-ui-border-width: 1px;
+
+body {
+	background: $foton-body-background;
+	@include background(url(/images/foton-body-background.gif));
+	@include background($foton-body-gradient);
+	background-repeat: repeat-x;
+}
+
+#container {
+	@include grid_container;
+	@include clearfix;
+}
+
+#header {
+	@include grid(16);
+	@include clearfix;
+	height: 150px;
+}
+
+nav.horizontal {
+	@include clearfix;
+}
+
+nav.horizontal ul {
+	margin: 0;
+
+}
+
+nav.horizontal li {
+	display: block;
+	float: left;
+}
+
+nav.horizontal .right {
+	float: right;
+}
+
+nav.global {
+	@include grid(16);
+}
+
+nav.global a {
+	height: 30px;
+	line-height: 30px;	
+	margin-top: 3px;
+	margin-bottom: 3px;
+	font-weight: bold;
+}
+
+.left-separator a {
+	border-left: 1px solid #E9EDEE;
+}
+
+.right-separator a {
+	border-right: 1px solid #E9EDEE;
+}
+
+.navigation {
+	@include ui-gradient-light;
+	@include border-radius($foton-ui-border-radius);
+	border: $foton-ui-border-width solid $foton-ui-border-color;
+}
+
+.navigation ul {
+	padding-left: $foton-ui-border-radius;
+	padding-right: $foton-ui-border-radius;
+}
+
+.navigation li a {
+	@include unstyled-link;
+	display: block;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.navigation .selected {
+}
+
+
+#search {
+	height: 45px;
+	padding: $foton-ui-border-radius;
+	margin-top: 100px;
+	@include grid(16);
+	@include clearfix;
+	@include ui-gradient-light;
+	border: $foton-ui-border-width solid $foton-ui-border-color;
+	@include border-radius($foton-ui-border-radius);
+}
+
+#search .x-panel-body {
+	border-style: none;
+	background: transparent;
+}
+
+#search .heading { 
+	@include grid(6);
+	float: left;
+}
+
+#search .widget {
+	@include grid(10);
+	float: left;
+}

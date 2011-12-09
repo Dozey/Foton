@@ -1,0 +1,2 @@
+- Patched compass compiler.rv / reverted to 0.10.4 
+- Patched Assetic CompassFilter (see https://github.com/kriswallsmith/assetic/issues/92)

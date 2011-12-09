@@ -1,0 +1,28 @@
+﻿@import "base";
+@import "compass/css3/text-shadow";
+
+$foton-font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+
+body {
+	font-family: $foton-font-family;
+}
+
+.navigation li a {
+	color: #686868;
+	font-size: 14px;
+	//@include single-text-shadow(#000, 6, 6, 4);
+	//@include background-image(linear-gradient(#fff, #3e3e3e 65%, #3e3e3e));
+	//-webkit-background-clip: text;
+	//-webkit-text-fill-color: transparent;
+}
+
+.navigation li.highlight a {
+	color: #49b8ff;
+	//@include background-image(linear-gradient(#fff, #49b8ff 65%, #49b8ff));
+	//-webkit-background-clip: text;
+	//-webkit-text-fill-color: transparent
+}
+
+label {
+	color: $foton-link-color;
+}

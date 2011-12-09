@@ -1,0 +1,12 @@
+{% extends '::base.html.twig' %}
+{% block stylesheets %}
+{% include "FotonCoreBundle::stylesheets.html.twig" %}
+{% endblock %}
+{% block body %}
+<nav>
+	<ul>
+		{% block navigation %}
+		{% endblock %}
+	</ul>
+</nav>
+{% endblock %}

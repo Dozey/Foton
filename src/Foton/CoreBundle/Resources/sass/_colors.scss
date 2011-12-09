@@ -1,0 +1,21 @@
+﻿$foton-body-background: #fff;
+$foton-body-gradient-start: #f3f3f3;
+$foton-body-gradient-stop: #fff;
+$foton-body-gradient-height: 200px;
+$foton-body-gradient: linear-gradient($foton-body-gradient-start, $foton-body-gradient-stop $foton-body-gradient-height);
+
+$foton-menu-background: #fbfbfb;
+$foton-menu-gradient-start: #fff;
+$foton-menu-gradient-stop: #f8f8f8;
+$foton-menu-gradient: linear-gradient($foton-menu-gradient-start, $foton-menu-gradient-stop);
+
+$foton-link-color: #0097F5;
+
+
+@mixin ui-gradient-light {
+	background: $foton-menu-background;
+	@include background(url(/images/foton-menu-background.gif));
+	@include background($foton-menu-gradient);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+}
